@@ -1,0 +1,26 @@
+/* reset */
+html, body {
+  margin: 0;
+}
+
+/* 包含背景图的元素及其父元素的高度设置为 `100%` */
+html, body, .container {
+  height: 100%;
+}
+
+/* 背景图片铺满全屏 */
+.container {
+  background-image: url(./background-photo.jpg);
+
+  /* 让背景图片占满屏幕 */
+  background-size: cover;
+
+  /* 居中背景图片的位置 */
+  background-position: center;
+
+  /* 有滚动条时固定住背景图片 */
+  background-attachment: fixed;
+
+  /* 图片还没加载出来时有背景颜色可以提高用户体验 */
+  background-color: #464646;
+}
